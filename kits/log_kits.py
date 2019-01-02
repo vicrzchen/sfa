@@ -1,4 +1,3 @@
-from crawl.bacs_crawl import go_to_targeturl
 import logging, coloredlogs
 from coloredlogs import parse_encoded_styles
 

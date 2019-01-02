@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.ie.options import Options
 from selenium.webdriver.common.keys import Keys
 from scrapy_db.constvalue import STARTUP_URL, BROWSER_PATH
-
+from kits.log_kits import logger
 
 # 打开到目标地址
 def go_to_targeturl(browser=None):
@@ -28,6 +28,9 @@ def go_to_targeturl(browser=None):
     browser.switch_to.window(select_expense_type_handle)
     browser.switch_to.frame('DialogWindow')
     browser.find_element_by_id('ctl00_C1_ctl00_DdlStatus').send_keys(Keys.ARROW_UP)
+    temp = browser
     browser.find_element_by_id('ctl00_C2_BtnOK').click()
-    browser.switch_to.frame('MainWindow')
+    browser = temp
+    # browser.switch_to.frame('MainWindow')
+    logger.info('test')
 
