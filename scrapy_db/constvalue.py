@@ -17,5 +17,4 @@ MAX_DB_OPERATION_CACHE = 15
 MAX_DUPLICATE_CONTINUE = 1000
 
 STARTUP_URL = 'https://erp.chn.xerox.com/fxclapp2006/Default.aspx'
-BROWSER_PATH = 'C:\\Users\\cnchenvic1\\Desktop\\IEDriverServer.exe'
-
+BROWSER_PATH = 'C:\\Users\\vichen-h\\Desktop\\IEDriverServer.exe'

@@ -9,3 +9,5 @@ if new_browser is None:
     exit(-1)
 
 browser = go_to_target_url(browser=new_browser)
+
+print('0')
